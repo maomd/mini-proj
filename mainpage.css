@@ -1,0 +1,38 @@
+body {
+    background-image: url("/Users/maodayuja/batch14fe/batch14-fe-activities/img/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* title */
+.title h1 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border: 2px gray solid;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 300px;
+}
+/* end of title */
+
+/* description */
+.description {
+    font-size: medium;
+    letter-spacing: 0.1em;
+    color: black;
+    text-align: center;
+}
+/* end of description */
+
+/* social-media sites */
+.social-media {
+    text-align: center;
+    color: aliceblue;
+    word-spacing: 1em;
+}
+
+.social-media :hover {
+    color: aliceblue;
+}
+/* end social-media sites */

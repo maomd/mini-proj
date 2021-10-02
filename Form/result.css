@@ -1,0 +1,15 @@
+body {
+    background-image: url("/Users/maodayuja/Desktop/Avion Front end/Form/img/sqd.jpg");
+}
+
+.result {
+    margin-left: 30%;
+    color:pink;
+    background-color:black;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-clip: content-box;
+    border: 5px solid  #fa4454;
+}

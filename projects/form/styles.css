@@ -1,4 +1,4 @@
-@import url(//fonts.cdnfonts.com/css/d-puntillas-a-lace);
+@import url('http://fonts.cdnfonts.com/css/mandatory-plaything');
 body {
     background-image: url("img/image.png"), url("img/black.jpg");
     background-repeat: no-repeat;
@@ -6,8 +6,9 @@ body {
     background-attachment:fixed;
     color: pink;
     font-family:sans-serif;
-    font-family: 'd puntillas A Lace', sans-serif;
+    font-family: 'Mandatory Plaything', sans-serif;                                              
 }
+
 /*title*/
 .titlename {
     text-align: center;

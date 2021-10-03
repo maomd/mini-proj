@@ -45,10 +45,10 @@ height: 500px
 
 /* project header */
 .project-header {
-    background-color: black;
+    background-color:dimgray;
     color: goldenrod;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: .5em;
 }
 /* end of project header */
 
@@ -81,7 +81,7 @@ height: 500px
 /* project title*/
 .project-title {
     color: goldenrod;
-    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: .1em;
 }
 /* project title*/
 

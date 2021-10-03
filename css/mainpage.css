@@ -1,5 +1,5 @@
 body {
-    background-image:url('/Users/maodayuja/batch14fe/batch14-fe-activities/img/mainbg.png');
+    background-image:url(../img/mainbg.png);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -48,6 +48,7 @@ height: 500px
     background-color: black;
     color: goldenrod;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 /* end of project header */
 
@@ -80,6 +81,7 @@ height: 500px
 /* project title*/
 .project-title {
     color: goldenrod;
+    font-family: 'Courier New', Courier, monospace;
 }
 /* project title*/
 

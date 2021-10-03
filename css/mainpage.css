@@ -9,6 +9,12 @@ border: 0px transparent;
 height: 500px
 }
 
+/*less-greater symbol*/
+.fas {
+    color: black;
+}
+/*end of less-greater symbol*/
+
 /* title */
 .title h1 {
     color: black;
@@ -55,9 +61,9 @@ height: 500px
 /* projects*/
 .projects {
     display: flex;
-  flex-wrap: wrap;
-  margin-right: 20%;
-  margin-left: 20%;
+    flex-wrap: wrap;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 /* end of projects*/
 

@@ -1,5 +1,5 @@
 body {
-    background-image:url('/Users/maodayuja/batch14fe/batch14-fe-activities/img/mainbg.jpg');
+    background-image:url('/Users/maodayuja/batch14fe/batch14-fe-activities/img/mainbg.png');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -43,24 +43,31 @@ height: 500px
 }
 /* end social-media sites */
 
+/* project header */
 .project-header {
     background-color: black;
     color: goldenrod;
     text-align: center;
 }
+/* end of project header */
 
+/* projects*/
 .projects {
     display: flex;
   flex-wrap: wrap;
   margin-right: 20%;
   margin-left: 20%;
 }
+/* end of projects*/
 
+/* project image*/
 .project-image {
     max-width: 100%;
     height: auto;
 }
+/* end of project image*/
 
+/* project description*/
 .project-description {
     background-color: black;
     border: 2px black solid;
@@ -68,8 +75,11 @@ height: 500px
     height: auto;
     text-align: center;
 }
+/* end of project description*/
 
+/* project title*/
 .project-title {
     color: goldenrod;
 }
+/* project title*/
 

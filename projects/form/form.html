@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/34f0bbad19.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Title and Description-->
+    <div class="titlename">
+        <h1 id="title">
+            SQUID GAME SURVEY
+        </h1>
+        <p id="description">
+            Join Squid Game S2
+        </p>
+    </div>
+    <!--End of Title and Description-->
+    <br>
+    <div class="container">
+        <form action="results.html" method="GET" id="survey-form">
+            <!--Name,Email, and Age-->
+            <div>
+                <label for="name" id="name-label">Name:</label>
+                <input class="input" type="text" id="name" placeholder="Enter your name here">
+            </div>
+            <div>
+                <label for="email" id="email-label">Email:</label>
+                <input class="input" type="email" id="email" placeholder="juandelacruz@email.com" style="width: 150px;" required>
+            </div>
+            <div>
+                <label for="age" id="number-label">Age:</label>
+                <input class="input" type="number" id="number" min="18" max="200" placeholder="18 above" style="width: 70px;" required>
+            </div>
+             <!-- End of Name,Email, and Age-->
+            <br>
+            <!--Color-->
+            <div>
+                <label for="dropdown">Choose a color:</label>
+                <select name="color" id="dropdown" required>
+                    <option class="red">&#128997;</option>
+                    <option class="green">&#129001;</option>
+                </select>
+            </div>
+            <!--End Color-->
+
+            <!--Shape-->
+            <div class="group1">
+                <h3>Pick any shape</h3>
+                <input type="radio" name="shape" value="circle">
+                <label for="circle" id="circle"><i class="far fa-circle"></i></label> 
+                <br>
+                <input type="radio" name="shape" value="triangle">
+                <label for="triangle" id="triangle">&#9651;</label> 
+                <br>
+                <input type="radio" name="shape" value="square">
+                <label for="square" id="square"><i class="far fa-square"></i></label> 
+            </div>
+            <!--End of Shape-->
+
+            <!--Games-->
+            <div class="group2"> 
+                <h3>Pick your games</h3>
+                <input type="checkbox" id="firstgame" name="redlight">
+                <label for="redlight">Red Light Green Light</label>
+                <br>
+                <input type="checkbox" id="secondgame" name="hell">
+                <label for="hell">Hell</label>
+                <br>
+                <input type="checkbox" id="thirdgame" name="umbrella">
+                <label for="umbrella">The Man with the Umbrella</label>
+                <br>
+                <input type="checkbox" id="fourthgame" name="team">
+                <label for="team">Stick to the Team</label>
+                <br>
+                <input type="checkbox" id="fifthgame" name="fair">
+                <label for="fair">A Fair World</label>
+                <br>
+                <input type="checkbox" id="sixthgame" name="Gganbu">
+                <label for="Gganbu">Gganbu</label>
+            </div>
+            <!--End of Games-->
+            
+            <!--comments-->
+            <div class="form">
+                <label for="comments"><h3>Reason for joining:</h3></label>
+                <textarea id="comments" rows="4" cols="100" required></textarea>
+            </div>
+            <!--End of comments-->
+
+            <!--submit-->
+            <div class="submit-button">
+                <input type="submit" id="submit">
+            </div>
+            <!--End of submit-->
+        </form> 
+    </div>
+</body>
+</html>

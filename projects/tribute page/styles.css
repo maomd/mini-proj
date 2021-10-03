@@ -1,0 +1,80 @@
+body {
+  background-color: black;
+  margin: 0%;
+  padding: 0%;
+}
+
+.nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  background-color:darkgrey;
+  text-decoration: none;
+}
+
+.nav a {
+  color:black;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+  
+#navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.nav a:hover {
+  background-color:peru;
+  color:sienna
+}
+
+#title {
+  text-align: center;
+  color: antiquewhite;
+}
+
+#image-caption {
+  font-size: large;
+  word-spacing: 2px;
+}
+
+#image {
+  margin-top: 5%;
+  margin-left: 30%;
+  width: 40%;
+  border: 2px black solid;
+  border-radius: 10px;
+}
+
+#image-caption {
+  text-align: center;
+  color: aliceblue;
+}
+
+#firstflight {
+  margin-top: 5%;
+  margin-left: 34.5%;
+  width: 30%;
+  border: 5px grey solid;
+  border-radius: 20px;
+}
+
+#siblings {
+  color:antiquewhite;
+  text-align: center;
+}
+
+#flightinfos {
+  margin: auto;
+  color:aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 5px grey solid;
+  border-radius: 20px;
+  padding: 10px;
+  width: 500px;
+}

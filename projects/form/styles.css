@@ -5,7 +5,6 @@ body {
     background-size: cover;
     background-attachment:fixed;
     color: pink;
-    font-family:sans-serif;
     font-family: 'Mandatory Plaything', sans-serif;                                              
 }
 
@@ -47,7 +46,7 @@ body {
 /*comments*/
 #comments {
     border: 2px palevioletred solid;
-    border-radius: 15px;
+    border-radius: 10px;
     width: 50%;
 }
 /*end of comments*/

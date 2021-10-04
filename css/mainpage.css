@@ -6,7 +6,7 @@ body {
 
 .frontpage {
 border: 0px transparent;
-height: 500px
+height: 100vh
 }
 
 /*less-greater symbol*/
@@ -51,8 +51,8 @@ height: 500px
 
 /* project header */
 .project-header {
-    background-color:dimgray;
-    color: goldenrod;
+    background-color:rgb(22, 3, 3);
+    color: rgb(199, 131, 13);
     text-align: center;
     letter-spacing: .5em;
 }
@@ -60,6 +60,7 @@ height: 500px
 
 /* projects*/
 .projects {
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     margin-right: 20%;
@@ -86,7 +87,7 @@ height: 500px
 
 /* project title*/
 .project-title {
-    color: goldenrod;
+    color: rgb(199, 131, 13);
     letter-spacing: .1em;
 }
 /* project title*/

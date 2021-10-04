@@ -1,0 +1,46 @@
+.background, body {
+  background-image: url("/Users/maodayuja/batch14fe/batch14-fe-activities/projects/survey-form/img/image.png"), url("/Users/maodayuja/batch14fe/batch14-fe-activities/projects/survey-form/img/black.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 105vh;
+}
+
+.formcontainer, .container {
+  text-align: left;
+  font-size: large;
+  border: 7px #ca406e solid;
+  border-radius: 10px;
+  width: 500px;
+  padding: 10px;
+  margin: auto;
+}
+
+.whitebar-input, .input, #dropdown, #comments, #submit {
+  border: 2px palevioletred solid;
+  border-radius: 5px;
+}
+
+body {
+  color: palevioletred;
+  font-family: 'Mandatory Plaything', sans-serif;
+}
+
+.titlename {
+  text-align: center;
+}
+
+/*comments*/
+#comments {
+  width: 300px;
+}
+
+/*end of comments*/
+/*submit*/
+#submit {
+  color: pink;
+  background-color: palevioletred;
+  width: 100px;
+}
+
+/*end submit*/
+/*# sourceMappingURL=styles.css.map */

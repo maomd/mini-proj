@@ -2,7 +2,7 @@
     background-image: url("/Users/maodayuja/batch14fe/batch14-fe-activities/projects/survey-form/img/image.png"), url("/Users/maodayuja/batch14fe/batch14-fe-activities/projects/survey-form/img/black.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 105vh;
+    height: 100vh;
 }
 
 .formcontainer {
@@ -31,6 +31,7 @@ body {
 }
 
 .container {
+    margin-top: 15px;
     @extend .formcontainer;
 }
 

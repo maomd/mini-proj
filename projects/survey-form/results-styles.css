@@ -1,0 +1,16 @@
+.background, body {
+  background-image: url("/Users/maodayuja/batch14fe/batch14-fe-activities/projects/survey-form/img/sqd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container, .result {
+  background-color: rgba(255, 192, 203, 0.342);
+  border: 3px black solid;
+  border-radius: 10px;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+/*# sourceMappingURL=results-styles.css.map */

@@ -1,0 +1,52 @@
+$textColor: rgb(247, 86, 185);
+$submitbuttonColor: rgb(204, 19, 142);
+$mainFont: 'Mandatory Plaything', sans-serif;
+
+/*background*/
+.background {
+    background-image: url(../img/image.png), url(../img/black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+/*end of background*/
+
+/*form-container*/
+.formcontainer {
+    text-align: left;
+    font-size:large;
+    border: 7px rgb(202, 64, 110) solid;
+    border-radius: 10px;
+    background-color: rgba(150, 95, 103, 0.267);
+    width: 500px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 15px;
+}
+/*end of form-container*/
+
+/*input bar*/
+.inputBar {
+    border: 2px rgb(243, 189, 189) solid;
+    border-radius: 3px;
+}
+/*end of input bar*/
+
+/*comment bar*/
+.commentBar {
+    width: 60vh / 100vh * 100%;
+}
+/*end of comment bar*/
+
+/*submit-button*/
+@mixin submitBttn ($sbtextcolor,$sbbgcolor) {
+    color:  $sbtextcolor;
+    background-color: $sbbgcolor;
+    letter-spacing: 0.2em;
+    font-family: $mainFont;
+    width: 20vh / 100vh * 100%;
+}
+/*end of submit-button*/
+
+
+

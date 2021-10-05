@@ -1,3 +1,4 @@
+/*background*/
 .background, body {
   background-image: url(../img/image.png), url(../img/black.jpg);
   background-repeat: no-repeat;
@@ -5,45 +6,64 @@
   height: 100vh;
 }
 
+/*end of background*/
+/*form-container*/
 .formcontainer, .container {
   text-align: left;
   font-size: large;
   border: 7px #ca406e solid;
   border-radius: 10px;
+  background-color: rgba(150, 95, 103, 0.267);
   width: 500px;
   padding: 10px;
   margin: auto;
+  margin-top: 15px;
 }
 
-.whitebar-input, .input, #dropdown, #comments, #submit {
-  border: 2px palevioletred solid;
-  border-radius: 5px;
+/*end of form-container*/
+/*input bar*/
+.inputBar, .input, #dropdown, #comments, .submit-button input {
+  border: 2px #f3bdbd solid;
+  border-radius: 3px;
 }
 
+/*end of input bar*/
+/*comment bar*/
+.commentBar, #comments {
+  width: 60%;
+}
+
+/*end of comment bar*/
+/*submit-button*/
+/*end of submit-button*/
+/*body*/
 body {
-  color: palevioletred;
-  font-family: 'Mandatory Plaything', sans-serif;
+  color: #f756b9;
+  font-family: "Mandatory Plaything", sans-serif;
 }
 
+/*end of body*/
+/*title name*/
 .titlename {
   text-align: center;
 }
 
-.container {
-  margin-top: 15px;
-}
-
-/*comments*/
-#comments {
-  width: 300px;
-}
-
-/*end of comments*/
+/*end of title name*/
+/*form-container*/
+/*end of form-container*/
+/*name, email, age input bar*/
+/*end of name, email, age inout bar*/
+/*color-dropdown*/
+/*color-dropdown*/
+/*comment bar*/
+/*end of comment bar*/
 /*submit*/
-#submit {
-  color: pink;
-  background-color: palevioletred;
-  width: 100px;
+.submit-button input {
+  color: #f756b9;
+  background-color: #221f1f;
+  letter-spacing: 0.2em;
+  font-family: "Mandatory Plaything", sans-serif;
+  width: 20%;
 }
 
 /*end submit*/

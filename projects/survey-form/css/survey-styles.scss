@@ -1,62 +1,49 @@
-.background {
-    background-image: url(../img/image.png), url(../img/black.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
+@import './variables';
 
-.formcontainer {
-    text-align: left;
-    font-size:large;
-    border: 7px rgb(202, 64, 110) solid;
-    border-radius: 10px;
-    width: 500px;
-    padding: 10px;
-    margin: auto;
-}
-
-.whitebar-input {
-    border: 2px palevioletred solid;
-    border-radius: 5px;
-}
-
+/*body*/
 body {
     @extend .background;
-    color: palevioletred;
-    font-family: 'Mandatory Plaything', sans-serif; 
+    color: $textColor;
+    font-family: $mainFont;
 }
+/*end of body*/
 
+/*title name*/
 .titlename {
     text-align: center;
 }
+/*end of title name*/
 
+/*form-container*/
 .container {
-    margin-top: 15px;
     @extend .formcontainer;
 }
+/*end of form-container*/
 
+/*name, email, age input bar*/
 .input {
-    @extend .whitebar-input;
+    @extend .inputBar;
 }
+/*end of name, email, age inout bar*/
 
+/*color-dropdown*/
 #dropdown {
-    @extend .whitebar-input;
+    @extend .inputBar;
 }
+/*color-dropdown*/
 
-/*comments*/
+/*comment bar*/
 #comments {
-   @extend .whitebar-input;
-    width: 300px;
+    @extend .inputBar;
+    @extend .commentBar;
 }
-/*end of comments*/
+/*end of comment bar*/
 
 /*submit*/
-#submit {
-    @extend .whitebar-input;
-    color: pink;
-    background-color: palevioletred;
-    width: 100px;
-}
+.submit-button input {
+    @extend .inputBar;
+    @include submitBttn ($textColor,rgb(34, 31, 31));
+} 
 /*end submit*/
 
 

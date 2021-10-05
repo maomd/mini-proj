@@ -42,7 +42,7 @@ $mainFont: 'Mandatory Plaything', sans-serif;
 @mixin submitBttn ($sbtextcolor,$sbbgcolor) {
     color:  $sbtextcolor;
     background-color: $sbbgcolor;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.5em;
     font-family: $mainFont;
     width: 20vh / 100vh * 100%;
 }

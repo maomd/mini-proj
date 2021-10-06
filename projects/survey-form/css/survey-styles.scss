@@ -47,6 +47,7 @@ body {
 .submit-button input {
     @extend .inputBar;
     @include submitBttn ($textColor,rgb(34, 31, 31));
+    text-transform: capitalize;
 } 
 /*end submit*/
 

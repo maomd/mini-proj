@@ -1,23 +1,27 @@
-.background {
-    background-image: url("/Users/maodayuja/batch14fe/batch14-fe-activities/projects/survey-form/img/sqd.jpg");
-    background-repeat: no-repeat;
+.resultbackground {
+    background-image: url(../img/sqd.jpg);
     background-size: cover;
-    height: 100vh;
 }
 
 .container {
-    background-color: rgba(255, 192, 203, 0.342);
-    border: 3px black solid;
-    border-radius: 10px;
-    width: 500px;
-    margin: auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+    background-color: rgba(20, 2, 2, 0.493);
+    height: 300px;
+    color: palevioletred;
+    text-shadow: 1px 1px whitesmoke;
 }
 
 body {
-    @extend .background;
+    font-family: 'Mandatory Plaything', sans-serif;
+    @extend .resultbackground;
+    
 }
 
 .result {
+    letter-spacing: .3em;
     @extend .container;
 }
+

@@ -1,16 +1,30 @@
-.background, body {
-  background-image: url("/Users/maodayuja/batch14fe/batch14-fe-activities/projects/survey-form/img/sqd.jpg");
-  background-repeat: no-repeat;
+.resultbackground, body {
+  background-image: url(../img/sqd.jpg);
   background-size: cover;
-  height: 100vh;
 }
 
 .container, .result {
-  background-color: rgba(255, 192, 203, 0.342);
-  border: 3px black solid;
-  border-radius: 10px;
-  width: 500px;
-  margin: auto;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12%;
+  background-color: rgba(20, 2, 2, 0.493);
+  height: 300px;
+  color: palevioletred;
+  text-shadow: 1px 1px whitesmoke;
+}
+
+body {
+  font-family: 'Mandatory Plaything', sans-serif;
+}
+
+.result {
+  letter-spacing: .3em;
 }
 /*# sourceMappingURL=results-styles.css.map */

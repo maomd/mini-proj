@@ -1,7 +1,8 @@
+/*variables*/
+/*variables*/
 /*background*/
 .background, body {
-  background-image: url(../img/image.png), url(../img/black.jpg);
-  background-repeat: no-repeat;
+  background: url(../img/image.png) no-repeat, black;
   background-size: cover;
   height: 100vh;
 }
@@ -46,6 +47,10 @@ body {
 /*title name*/
 .titlename {
   text-align: center;
+}
+
+#title {
+  text-shadow: 1px 1px whitesmoke;
 }
 
 /*end of title name*/

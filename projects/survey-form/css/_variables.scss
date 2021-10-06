@@ -1,11 +1,13 @@
+/*variables*/
 $textColor: rgb(247, 86, 185);
 $submitbuttonColor: rgb(204, 19, 142);
 $mainFont: 'Mandatory Plaything', sans-serif;
+$textShadow: 1px 1px whitesmoke;
+/*variables*/
 
 /*background*/
 .background {
-    background-image: url(../img/image.png), url(../img/black.jpg);
-    background-repeat: no-repeat;
+    background: url(../img/image.png) no-repeat, black;
     background-size: cover;
     height: 100vh;
 }

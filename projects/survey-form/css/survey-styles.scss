@@ -12,6 +12,10 @@ body {
 .titlename {
     text-align: center;
 }
+
+#title {
+    text-shadow: $textShadow;
+}
 /*end of title name*/
 
 /*form-container*/

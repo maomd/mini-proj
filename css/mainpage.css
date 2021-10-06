@@ -6,7 +6,7 @@ body {
 
 .frontpage {
 border: 0px transparent;
-height: 100vh
+height: 50rem;
 }
 
 /*less-greater symbol*/
@@ -24,7 +24,7 @@ height: 100vh
     border-radius: 15px;
     max-width: 400px;
     margin: auto;
-    margin-top: 300px;
+    margin-top: 25rem;
 }
 /* end of title */
 
@@ -57,6 +57,7 @@ height: 100vh
     height: 100px;
     background-color:rgba(104, 96, 96, 0.11);
     color: rgba(37, 37, 35, 0.788);
+    text-shadow: 4px 2px rgb(204, 190, 190);
     text-align: center;
     letter-spacing: .5em;
 }
@@ -67,6 +68,7 @@ height: 100vh
     margin-top: 5%;
     height: 100vh;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-right: 20%;
     margin-left: 20%;
@@ -75,24 +77,24 @@ height: 100vh
 
 /* project image*/
 .project-image {
-    max-width: 100%;
-    height: auto;
+    width: 70rem;
+    height: 35rem;
+    border: 5px slategrey double;
 }
 /* end of project image*/
 
 /* project description*/
 .project-description {
-    background-color: black;
-    border: 2px black solid;
-    width: 100%;
-    height: auto;
+    background-color:transparent;
+    width: 70rem;
+    height: 5rem;
     text-align: center;
 }
 /* end of project description*/
 
 /* project title*/
 .project-title {
-    color: rgb(145, 118, 72);
+    color: dimgray;
     letter-spacing: .1em;
 }
 /* project title*/

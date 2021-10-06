@@ -10,12 +10,18 @@ body {
 
 /*title name*/
 .titlename {
-    text-align: center;
+    margin-top: 5rem;
+    h1 {
+        text-align: center;
+        text-shadow: $textShadow;
+        letter-spacing: 1rem;
+    }
+    p {
+        text-align: center;
+        letter-spacing: 0.5rem;
+    }
 }
 
-#title {
-    text-shadow: $textShadow;
-}
 /*end of title name*/
 
 /*form-container*/

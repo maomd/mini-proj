@@ -2,6 +2,7 @@ body {
   background: linear-gradient(150deg, grey , black 50%);
   margin: 0%;
   padding: 0%;
+  height: 100vh;
 }
 
 .nav {

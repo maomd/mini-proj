@@ -1,28 +1,40 @@
 body 
-    background-color: white
-
-.chessboard
+    margin: 0
+    padding: 0
+    width: 100vw
+    height: 100vh
+    background-color: black
     display: flex
-    flex-direction: column
-    width: 40vw
-    height: 40vw
- 
+    align-items: center
+    box-sizing: border-box
+   
+#chess-board
+    
+    margin: auto
+    display: flex
+    flex-wrap: wrap
+    width: 88vmin
+    height: 88vmin
+
 .row
     display: flex
     flex-direction: row
-  div 
-      font-size: 4vw
-      text-align: center
+
+.box  
+    font-size: 10vmin
+    text-align: center
+    width: 11vmin
+    height: 11vmin
 
 .white-box
-    background-color: whitesmoke
-    width: 5vw
-    height: 5vw
-  
+    background: url('../Chess_flex/img/white-block.png') 
+    background-size: contain
+    
 .black-box
-    background-color: gray
-    width: 5vw
-    height: 5vw
+    background: url('../Chess_flex/img/black-block.png')
+    background-size: contain
+
+   
   
 
 

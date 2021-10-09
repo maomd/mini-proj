@@ -15,6 +15,7 @@ body {
 }
 
 #chess-board {
+  border: 1vmin brown solid;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,11 +45,11 @@ body {
 
 .white-box {
   background: url("../Chess_flex/img/white-block.png");
-  background-size: contain;
+  background-size: cover;
 }
 
 .black-box {
   background: url("../Chess_flex/img/black-block.png");
-  background-size: contain;
+  background-size: cover;
 }
 /*# sourceMappingURL=chess.css.map */

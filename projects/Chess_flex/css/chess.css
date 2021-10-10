@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#container {
+  background-color: brown;
+  margin: auto;
+  border: 1vmin brown solid;
+  width: 88vmin;
+  height: 88vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container p {
+  margin: 0;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.2vmin;
+  text-shadow: 2px 1px black;
+  font-size: 2.5vmin;
+  position: relative;
+}
+
+#chess-board {
+  border: 1vmin transparent solid;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80vmin;
+  height: 80vmin;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.box {
+  font-size: 9vmin;
+  text-align: center;
+  width: 10vmin;
+  height: 10vmin;
+}
+
+.white-box {
+  background: url("../img/white-block.png");
+  background-size: cover;
+}
+
+.black-box {
+  background: url("../img/red.png");
+  background-size: cover;
+}
+/*# sourceMappingURL=chess.css.map */

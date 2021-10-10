@@ -15,7 +15,7 @@ body {
 }
 
 #container {
-  background: url("../img/wood-pattern.png") #312318;
+  background: url("../img/wood.png");
   background-size: contain;
   margin: auto;
   border: 0.5vmin #312318 solid;
@@ -35,7 +35,7 @@ body {
   color: white;
   text-align: center;
   letter-spacing: 0.2vmin;
-  text-shadow: 2px 1px black;
+  text-shadow: 0.2vmin 0.2vmin black;
   font-size: 3vmin;
   position: relative;
 }

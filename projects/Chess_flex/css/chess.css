@@ -15,7 +15,7 @@ body {
 }
 
 #container {
-  background: url("../img/container-bg.png");
+  background-color: red;
   margin: auto;
   border: 0.5vmin dimgray solid;
   width: 88vmin;

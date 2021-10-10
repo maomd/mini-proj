@@ -15,9 +15,9 @@ body {
 }
 
 #container {
-  background-color: brown;
+  background: url("../img/container-bg.png");
   margin: auto;
-  border: 1vmin brown solid;
+  border: 0.5vmin dimgray solid;
   width: 88vmin;
   height: 88vmin;
   display: -webkit-box;
@@ -30,17 +30,17 @@ body {
 }
 
 #container p {
-  margin: 0;
+  margin: auto;
   color: white;
   text-align: center;
   letter-spacing: 0.2vmin;
   text-shadow: 2px 1px black;
-  font-size: 2.5vmin;
+  font-size: 3vmin;
   position: relative;
 }
 
 #chess-board {
-  border: 1vmin transparent solid;
+  border: 0.5vmin transparent solid;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,7 +69,7 @@ body {
 }
 
 .white-box {
-  background: url("../img/white-block.png");
+  background: url("../img/brown.png");
   background-size: cover;
 }
 

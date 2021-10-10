@@ -15,9 +15,10 @@ body {
 }
 
 #container {
-  background-color: red;
+  background: url("../img/wood-pattern.png") #312318;
+  background-size: contain;
   margin: auto;
-  border: 0.5vmin dimgray solid;
+  border: 0.5vmin #312318 solid;
   width: 88vmin;
   height: 88vmin;
   display: -webkit-box;

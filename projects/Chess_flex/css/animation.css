@@ -1,0 +1,81 @@
+#container:hover #white-pawn {
+    position: relative;
+    animation: first-move 1s forwards;
+  }
+  
+  @keyframes first-move {
+    0%   {bottom: 0vmin;}
+    100% {bottom: 20vmin;}
+  }
+
+#container:hover #black-pawn {
+    position: relative;
+    animation: second-move 1s 1s forwards;
+  }
+  
+  @keyframes second-move {
+    0%   {top: 0vmin;}
+    100% {top: 20vmin;}
+  }
+
+#container:hover #white-bishop {
+    left: 111vmin;
+    position:absolute;
+    animation: third-move 1s 2s forwards;   
+}
+
+  @keyframes third-move {
+  0%  { transform: translate(0);}
+  100% { transform: translate(-30vmin, -30vmin)}
+  }
+
+#container:hover #black-horse {
+    position: relative;
+    animation: fourth-move 2s 3s forwards ease; 
+}
+
+  @keyframes fourth-move {
+    0%   {top: 0vmin;}
+    50% {top: 20vmin;}
+    100% {top: 20vmin; right: 10vmin;}
+  }
+
+#container:hover #white-queen {
+    left: 91vmin;
+    position: absolute;
+    animation: fifth-move 1s 4s forwards,
+               pause 1s 1s,
+               seventh-move 1s 6s forwards;
+}
+
+  @keyframes fifth-move {
+      0%  { transform: translate(0,0);}
+      100% { transform: translate(20vmin, -20vmin)}
+      }
+    @keyframes pause {
+        100% { transform: translate(0,0);}
+        }
+      @keyframes seventh-move {
+          100% { transform: translate(20vmin,-60vmin);}
+          }
+
+#container:hover #black-pawn-2 {
+    position: relative;
+    animation: sixth-move 1s 5s forwards;
+  }
+  
+  @keyframes sixth-move{
+    0%   {top: 0vmin;}
+    100% {top: 20vmin;}
+  }
+ 
+#container:hover #black-pawn-3 {
+    position: relative;
+    animation: eighth-move 1s 7s forwards ease;
+  }
+  
+  @keyframes eighth-move {
+    0% {opacity: 1;}
+   100% {opacity: 0;}
+  }
+

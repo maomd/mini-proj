@@ -19,14 +19,13 @@
   }
 
 #container:hover #white-bishop {
-    left: 108.2vmin;
     position:absolute;
     animation: third-move 1s 2s forwards;   
 }
 
   @keyframes third-move {
   0%  { transform: translate(0);}
-  100% { transform: translate(-30vmin, -30vmin)}
+  100% { transform: translate(-32.5vmin, -30vmin)}
   }
 
 #container:hover #black-horse {
@@ -43,7 +42,6 @@
   }
 
 #container:hover #white-queen {
-    left: 88.22vmin;
     position: absolute;
     animation: fifth-move 1s 4s forwards,
                pause 1s 1s,
@@ -52,13 +50,13 @@
 
   @keyframes fifth-move {
       0%  { transform: translate(0,0);}
-      100% { transform: translate(20vmin, -20vmin)}
+      100% { transform: translate(17.5vmin, -20vmin)}
       }
     @keyframes pause {
         100% { transform: translate(0,0);}
         }
       @keyframes seventh-move {
-          100% { transform: translate(20vmin,-60vmin);}
+          100% { transform: translate(17.5vmin,-60vmin);}
           }
 
 #container:hover #black-pawn-2 {

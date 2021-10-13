@@ -19,7 +19,7 @@
   }
 
 #container:hover #white-bishop {
-    left: 111.5vmin;
+    left: 108.2vmin;
     position:absolute;
     animation: third-move 1s 2s forwards;   
 }
@@ -41,7 +41,7 @@
   }
 
 #container:hover #white-queen {
-    left: 91.5vmin;
+    left: 88.22vmin;
     position: absolute;
     animation: fifth-move 1s 4s forwards,
                pause 1s 1s,

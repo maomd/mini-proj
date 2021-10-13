@@ -31,12 +31,14 @@
 
 #container:hover #black-horse {
     position: relative;
-    animation: fourth-move 2s 3s forwards ease; 
+    animation: fourth-move 2s 3s forwards ease-out; 
 }
 
   @keyframes fourth-move {
     0%   {top: 0vmin;}
+    25% {top: 20vmin;}
     50% {top: 20vmin;}
+    66% {top: 20vmin;}
     100% {top: 20vmin; right: 10vmin;}
   }
 

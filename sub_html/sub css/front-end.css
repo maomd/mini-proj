@@ -1,15 +1,22 @@
-body{
+*{
     margin: 0;
-    padding: 5vh 0;
-    background: url(/Users/maodayuja/batch14fe/batch14-fe-activities/img/mainbg.png);
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right,rgb(0, 0, 0) 30%, rgba(105, 105, 105, 0)), url(/Users/maodayuja/batch14fe/batch14-fe-activities/img/mainbg.png);
     background-size: cover;
+}
+
+.project-container {
     display: grid;
-    grid-template-columns: 2 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vmin;
     justify-items: center;
 }
+
 .projects {
     position: relative;
-    width: 500px;
+    width: 400px;
 }
 
 .project-image{
@@ -56,7 +63,7 @@ body{
     font-weight: bold;
 }
 
-a {
+ a {
     color:white;
 }
 

@@ -1,6 +1,4 @@
 body {
-  margin: 0;
-  padding: 0;
   background: url("../img/mainbg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,11 +8,7 @@ body {
 }
 
 .frontpage {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
   height: 100vh;
-  border: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,6 +34,22 @@ body {
   width: 50vmin;
 }
 
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image img {
+  width: 30vmin;
+  height: 30vmin;
+  border: 10px rgba(105, 105, 105, 0.281) solid;
+  border-radius: 50%;
+}
+
 .description {
   font-size: 3vmin;
 }
@@ -48,53 +58,11 @@ body {
   letter-spacing: 3vmin;
 }
 
-.project-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: dimgrey;
-  width: 100vw;
-  text-align: center;
+.fas {
   color: black;
-  letter-spacing: 0.5vmin;
 }
 
-.projects {
-  margin: 5vh 0;
-}
-
-.project-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 0.1vmin black solid;
-  border-radius: 2.5vmin;
-  width: 100%;
-  height: 100%;
-}
-
-.project-title {
-  background-color: #4683b44b;
-  color: dimgrey;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 0.1vmin black solid;
-  border-radius: 2.5vmin;
-  width: 100%;
-  height: 10vmin;
+#sign:hover {
+  color: blue;
 }
 /*# sourceMappingURL=index.css.map */

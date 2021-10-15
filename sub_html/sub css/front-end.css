@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background-image: url('/Users/maodayuja/batch14fe/batch14-fe-activities/img/minimalistbg.png');
+    background-color:lightcyan;
     backdrop-filter: blur(1px);
     background-repeat: no-repeat;
     background-size: cover;

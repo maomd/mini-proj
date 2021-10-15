@@ -3,24 +3,28 @@
     padding: 0;
 }
 body{
-    background-image: linear-gradient(to right,rgb(0, 0, 0) 30%, rgba(105, 105, 105, 0)), url(/Users/maodayuja/batch14fe/batch14-fe-activities/img/mainbg.png);
+    background-image: url(/Users/maodayuja/batch14fe/batch14-fe-activities/img/minimalistbg.png);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;  
 }
 
 .project-container {
+    padding: 2.5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5vmin;
-    justify-items: center;
+    grid-template-columns: repeat(2, 35rem);
+    gap: 1rem;
+    justify-content: center;
 }
 
 .projects {
     position: relative;
-    width: 400px;
+    width: 35rem;
 }
 
-.project-image{
+.project-image {
     display: block;
+    box-shadow:2vmin 1vmin black;
     width: 100%;
 }
 
@@ -42,11 +46,11 @@ body{
 }
 
 .image-overlay-blur {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
 }
 
 .image-overlay > * {
-    transform: translateY(20px);
+    transform: translateY(5px);
     transition: transform 0.25s;
 }
 
@@ -59,7 +63,7 @@ body{
 }
 
 .image-title {
-    font-size: 2em;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -70,6 +74,6 @@ body{
 .image-description {
     margin: 10px;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1rem;
     margin-top: 0.25em;
 }

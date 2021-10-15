@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-image: url(/Users/maodayuja/batch14fe/batch14-fe-activities/img/minimalistbg.png);
+body {
+    background-image: url('/Users/maodayuja/batch14fe/batch14-fe-activities/img/minimalistbg.png');
+    backdrop-filter: blur(1px);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;  
@@ -13,7 +14,7 @@ body{
     padding: 2.5rem;
     display: grid;
     grid-template-columns: repeat(2, 35rem);
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
 }
 
@@ -24,7 +25,7 @@ body{
 
 .project-image {
     display: block;
-    box-shadow:2vmin 1vmin black;
+    box-shadow:2vmin 1vmin dimgray;
     width: 100%;
 }
 

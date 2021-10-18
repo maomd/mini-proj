@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+body {
+    width: 100%;
+    background-color: black;
+    max-width: 100%;
+}
+
+header {
+    background-color: rgb(184,134,11);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header .logo {
+    position: relative;
+    max-width: 100%;
+}
+
+#header-img {
+    width: 9.375rem;
+    height: 4.688rem;
+}
+
+.toggle-button {
+    margin-top: 1rem;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.nav-link {
+    display: inline-block;
+    color: whitesmoke;
+    font-weight: 400;
+    margin: 2.5rem;
+    text-decoration: none;
+}
+
+.front-container {
+    background-image: linear-gradient(to top, rgb(61,12,2) 30%, transparent), url('../img/coffee-beans.png');
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tagline {
+    color: gainsboro;
+    text-align: center;
+}
+
+.product-image {
+    justify-self: center;
+    width: 40%;
+}
+
+#tag-one {
+    font-size: 4rem;
+}
+
+#tag-two {
+    font-size: 2rem;
+    line-height: 10rem;
+}
+
+.media {
+    margin-top: 10rem;
+    padding: 1rem;
+    background-image: url('../img/coffee-farm.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 100%;
+}
+
+#media-title {
+    padding: 2rem 0;
+    color: aliceblue;
+    border: 0 brown solid;
+    border-radius: 0 3rem 0 3rem;
+    background-color: brown;
+    font-size: 2rem;
+    width: 50%;
+    height: 10rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.product-header {
+    margin-top: 10rem;
+    background-color: rgb(61,12,2);
+    color: #eee;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.products {
+    padding: 2.5rem;
+    background-color: rgb(244,240,236);
+    display: flex;
+    justify-content: space-around;
+}
+
+.one {
+    border-radius: 0 3rem 0 3rem;
+    background-color: brown;
+}
+
+.two {
+    border-radius: 0 3rem 0 3rem;
+    background-color: rgb(30,144,255);
+}
+
+.three {
+    border-radius: 0 3rem 0 3rem;
+    background-color: rgb(100,140,17);
+}
+
+.gold {
+    border-radius: 0 3rem 0 3rem;
+    background-color: rgb(184,134,11);
+}
+
+.buy-now{
+    margin-top: 1rem;
+    padding: 0.1rem;
+    border: 0;
+    border-radius: 1rem;
+    background-color: rgb(172,229,238);
+}
+
+.product-card {
+    background-color: aliceblue;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+    padding: 15px; 
+    border: 1px solid #eee;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.06) 4px 2px 4px;
+    transition: all .3s ease-in-out;
+    width: 18rem;
+    height: 25rem;
+    overflow: hidden;
+}
+  
+.product-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
+  }
+
+.form-section {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+    margin-top: 3rem;
+}
+
+#form {
+    padding: 3rem;
+    background-color: rgb(61,12,2);
+    border: 0;
+    width: 30rem;
+    height: 15rem;
+}
+
+.button {
+    background-color: brown;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+  
+input[type=email]:focus {
+    border: 3px solid #555555;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    color: #555555;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    line-height: 5rem;
+    letter-spacing: 1rem;
+}
+
+.fab {
+    color: brown;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: rgb(61,12,2);
+}
+
+#header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+.toggle-button {
+        display: flex;
+    }
+
+.navbar {
+        display: none;
+        width: 100%;
+    }
+
+.navbar ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+.navbar ul li {
+        text-align: center;
+    }
+
+.navbar ul li a {
+        padding: .5rem 1rem;
+    }
+
+.navbar.active {
+        display: flex;
+    }
+
+.front-container {
+    background: none;
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap-reverse;
+}
+
+.product-image {
+    margin-top: 15vmin;
+}
+
+.media {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.products {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+}
+

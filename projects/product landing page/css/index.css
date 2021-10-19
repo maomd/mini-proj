@@ -218,8 +218,9 @@ header .logo {
 /* form */
 
 .form-section {
+    margin-left: 25%;
     display: flex;
-    flex-wrap: column wrap;
+    flex-wrap: wrap;
     color: aliceblue;
     margin-top: 3rem;
 }
@@ -453,8 +454,9 @@ body {
 /* form */
 
 .form-section {
+    margin-left: 30%;
     display: flex;
-    flex-wrap: column wrap;
+    flex-flow: column wrap;
     color: aliceblue;
     margin-top: 3rem;
 }
@@ -503,7 +505,6 @@ input[type=email]:focus {
     height: 15rem;
     display: flex;
     flex-direction: column;
-    
     text-align: center;
     line-height: 2rem;
     color: #555555;

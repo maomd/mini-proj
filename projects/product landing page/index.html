@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/34f0bbad19.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/index.css">
-    <script src="script.js" defer></script>
+    <script src="./script/script.js" defer></script>
     <title>Nescafé</title>
 </head>
 <body>
+
+    <!-- nav bar -->
     <div class="header-div">
         <header id="header">
             <div class="logo"><img id="header-img" src="./img/LOGO-white_2.svg"></div> 
@@ -20,80 +22,101 @@
             </a>
                 <nav class="navbar" id="nav-bar">
                     <ul>
-                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="#front">Home</a></li>
                         <li><a class="nav-link" href="#our-coffees">Our Coffees</a></li>
                         <li><a class="nav-link" href="#form">Subscribe</a></li>
                     </ul>
                 </nav>      
         </header>
     </div>  
+    <!-- nav bar -->
 
-    <section class="front-container">
-        <div class="content">
+    <!-- front page -->
+    <section class="front-page-bg" id="front">
+        <div class="container front-page">
             <div class="tagline">
-                <p id="tag-one">Kasangga ng Bawat Pilipino</p>
-                <p id="tag-two">Bangon na with NESCAFÉ®</p>  
+                <h1 id="tag-one">Kasangga ng Bawat Pilipino</h1><br>
+                <p id="tag-two">Bangon na with NESCAFÉ®</p><br>  
                 <p id="tag-three">NESCAFÉ® helps you rise and thrive everyday. Enjoy our variety of coffees - from 100% pure and natural coffee to creamy and indulgent cups. Explore our range of coffees to find the one that suits your taste.</p>
             </div>
-            <img class="product-image" src="./img/PngItem_640196.png" alt="">
+            <div>
+                <img class="front-product-image" src="./img/PngItem_640196.png" alt="">
+            </div>
         </div>
     </section>
+    <!-- front page -->
    
-
-    <section class="media"> 
-        <div id="media-title" >
-            <p>NESCAFÉ</p>
-            <p>Kasambuhay sa bawat pagbangon</p>
+    <!-- Video -->
+    <section class="media-bg"> 
+        <div class="container media">
+            <div id="media-title" >
+                <h2>NESCAFÉ</h2>
+                <p>Kasambuhay sa bawat pagbangon</p>
+            </div>
+            <div>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/LMcKYQbPrcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WEOyI6QtjkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section> 
+    <!-- Video -->
 
-    <section class="product-header" id="our-coffees">
-        <p>Our Coffees</p>
-    </section>
-
-    <section class="products">
-        <div class="product-card">
-            <p>NESCAFÉ Classic</p>
-            <img class="product-image one" src="./img/Classic Doy Pack 2000x2000.png" alt="">
-            <p>Start your day right with the first sips of this classic. Let NESCAFÉ CLASSIC...</p>
-            <P class="buy-now">BUY NOW</P>
-        </div>
-
-        <div class="product-card">
-            <p>NESCAFÉ GOLD Intense</p>
-            <img class="product-image gold" src="./img/Gold Intense 2000x2000.png" alt="">
-            <p>NESCAFÉ GOLD Intense is expertly crafted with premium choice Arabica beans...</p>
-            <P class="buy-now">BUY NOW</P>
-        </div>
-
-        <div class="product-card">
-            <p>NESCAFÉ Classic Decaf</p>
-            <img class="product-image two" src="./img/Decaf 2000x2000.png" alt="">
-            <p>Enjoy the taste of NESCAFÉ CLASSIC without the caffeine. Our best coffee...</p>
-            <P class="buy-now">BUY NOW</P>
-        </div>
-
-        <div class="product-card">
-            <p>NESCAFÉ GOLD</p>
-            <img class="product-image gold" src="./img/Gold 2000x2000.png" alt="">
-            <p>NESCAFÉ GOLD is expertly crafted with premium choice Arabica beans and...</p>
-            <P class="buy-now">BUY NOW</P>
-        </div>
-
-        <div class="product-card">
-            <p>NESCAFÉ Classic Strong</p>
-            <img class="product-image three" src="./img/Classic Strong 2000x2000.png" alt="">
-            <p>NESCAFÉ CLASSIC Strong is made from 100% natural coffee beans. High-quality...</p>
-            <P class="buy-now">BUY NOW</P>
+    <!-- product title  -->
+    <section class="product-header-bg">
+        <div class="container product-header">
+            <h1 id="our-coffees">Our Coffees</h1>
         </div>
     </section>
+    <!-- product title  -->
 
+    <!-- product card -->
+    <section class="product-card-bg">
+        <div class="container products">
+            <div class="product-card">
+                <p>NESCAFÉ Classic</p>
+                <img class="product-image one" src="./img/Classic Doy Pack 2000x2000.png" alt="">
+                <p>Start your day right with the first sips of this classic. Let NESCAFÉ CLASSIC...</p>
+                <P class="buy-now">BUY NOW</P>
+            </div>
+
+            <div class="product-card">
+                <p>NESCAFÉ GOLD Intense</p>
+                <img class="product-image gold" src="./img/Gold Intense 2000x2000.png" alt="">
+                <p>NESCAFÉ GOLD Intense is expertly crafted with premium choice Arabica beans...</p>
+                <P class="buy-now">BUY NOW</P>
+            </div>
+
+            <div class="product-card">
+                <p>NESCAFÉ Classic Decaf</p>
+                <img class="product-image two" src="./img/Decaf 2000x2000.png" alt="">
+                <p>Enjoy the taste of NESCAFÉ CLASSIC without the caffeine. Our best coffee...</p>
+                <P class="buy-now">BUY NOW</P>
+            </div>
+
+            <div class="product-card">
+                <p>NESCAFÉ GOLD</p>
+                <img class="product-image gold" src="./img/Gold 2000x2000.png" alt="">
+                <p>NESCAFÉ GOLD is expertly crafted with premium choice Arabica beans and...</p>
+                <P class="buy-now">BUY NOW</P>
+            </div>
+
+            <div class="product-card">
+                <p>NESCAFÉ Classic Strong</p>
+                <img class="product-image three" src="./img/Classic Strong 2000x2000.png" alt="">
+                <p>NESCAFÉ CLASSIC Strong is made from 100% natural coffee beans. High-quality...</p>
+                <P class="buy-now">BUY NOW</P>
+            </div>
+        </div>
+    </section>
+    <!-- product card -->
+
+    <!-- form -->
     <section class="form-section">
         <form id="form" action="">
             <label for="email">Subscribe to our news letter</label><br>
             <input type="email" id="email" placeholder="Email Address" required>
-            <button class="button">SUBSCRIBE</button>
+            <div id="submit-button">
+                <input class="button" id="submit" type="submit" value="SUBSCRIBE" >
+            </div>
         </form>
 
         <div class="social-media">
@@ -107,5 +130,6 @@
             </div>
         </div>
     </section>
+    <!-- form -->
 </body>
 </html>

@@ -286,6 +286,7 @@ input[type=email]:focus {
     color: brown;
     font-size: 2rem;
 }
+/* form */
 
 @media screen and (max-width: 1024px) {
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -522,6 +523,12 @@ input[type=email]:focus {
     font-size: 2rem;
 }
 /* form */
+
+/* footer*/
+#reference {
+    color: grey;
+}
+/* footer*/
  
 }
 

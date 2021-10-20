@@ -1,0 +1,32 @@
+.tagline {
+    animation: tagline 2s forwards;
+}
+
+@keyframes tagline {
+    0% {transform: translateY(50%);
+        opacity: 0;}
+    100% {transform: translateY(0);
+        opacity: 1;}
+    }
+
+.front-product-image {
+    animation: product-image 2s forwards;
+}
+
+@keyframes product-image {
+    0% {transform: translateX(100%);
+        opacity: 0;}
+    100% {transform: translateX(0);
+        opacity: 1;}
+}
+
+.product-card {
+    animation: product-card 2s forwards;
+}
+
+@keyframes product-card {
+    0% {transform: translateX(100%);
+        opacity: 0;}
+    100% {transform: translateX(0);
+        opacity: 1;}
+}

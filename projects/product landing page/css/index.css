@@ -12,6 +12,7 @@ body {
     background-attachment:fixed;
     background-size: cover;
 }
+
 /* nav bar */
 header {
     background-color: rgb(184,134,11);
@@ -44,7 +45,6 @@ header .logo {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    
     width: 30px;
     height: 21px;
 }
@@ -78,21 +78,24 @@ header .logo {
     padding: 10rem 5rem;
 }
 
-
 .front-page {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    color: white;
+    color: rgba(255, 255, 255, 0.637);
     text-align: center;
 }
 
 .tagline {
-    border: .5rem white solid;
+    border: .5rem rgb(184,134,11) solid;
     border-radius: 0 3rem 0 3rem;
     padding: 1rem 5rem;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.637);
+    background-color: rgba(0, 0, 0, 0.274); 
+}
+
+.tagline h1 {
+    font-size:  4rem;
 }
 
 .front-product-image {
@@ -177,6 +180,11 @@ header .logo {
     background-color: rgb(172,229,238);
 }
 
+.buy-now a {
+    color: black;
+    text-decoration: none;
+}
+
 .product-card:hover {
     box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
     transform: translate3d(0px, -1px, 0px);
@@ -201,6 +209,7 @@ header .logo {
     border-radius: 0 3rem 0 3rem;
     background-color: rgb(184,134,11);
 }
+
 .product-card {
     background-color: aliceblue;
     text-align: center;
@@ -352,11 +361,11 @@ body {
 }
 
 .tagline {
-    border: .5rem white solid;
+    border: .5rem rgb(184,134,11) solid;
     border-radius: 0 3rem 0 3rem;
     padding: 1rem 5rem;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.637);
+    background-color:  rgba(0, 0, 0, 0.274);
 }
 
 .front-product-image {

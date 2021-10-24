@@ -297,7 +297,7 @@ input[type=email]:focus {
 }
 /* form */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 * {
@@ -464,7 +464,7 @@ body {
 /* form */
 
 .form-section {
-    margin-left: 30%;
+    margin-left: 40%;
     display: flex;
     flex-flow: column wrap;
     color: aliceblue;

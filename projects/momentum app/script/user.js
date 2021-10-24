@@ -1,12 +1,13 @@
+// DOM variables
 const form = document.querySelector(".js-form"),
       input = form.querySelector("input");
 
 const greeting = document.querySelector(".js-greetings");
-const USER_LS = "currentUser",
-      SHOWING_CN = "showing";
+const user = "currentUser",
+      displayed = "showing";
 
 function saveName(text) {
-  localStorage.setItem(USER_LS, text);
+  localStorage.setItem(user, text);
 }
 
 function handleSubmit(event) {
@@ -20,25 +21,30 @@ function handleSubmit(event) {
 
 function askForName() {
  
-  form.classList.add(SHOWING_CN);
+  form.classList.add(displayed);
  
   form.addEventListener("submit", handleSubmit);
   
 }
 
 function paintGreeting(text) {
- 
-  form.classList.remove(SHOWING_CN);
-  
-  greeting.classList.add(SHOWING_CN);
-  
-  greeting.innerText = `Hope you have a great day, ${text}!`;
-  
+  form.classList.remove(displayed);
+  greeting.classList.add(displayed);
+  let today = new Date(),
+      hour = today.getHours();
+
+  if (hour < 12) {
+    greeting.innerText = `Good Morning, ${text}!`; 
+  } else if (hour < 18) {
+    greeting.innerText = `Good Afternoon, ${text}!`; 
+  } else {
+    greeting.innerText = `Good Evening, ${text}!`; 
+  }
 }
 
 
 function loadName() {
-  const currentUser = localStorage.getItem(USER_LS);
+  const currentUser = localStorage.getItem(user);
   if (currentUser === null) {
     askForName();
   } else {

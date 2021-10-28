@@ -1,29 +1,37 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@500&family=Poppins:wght@500&family=Raleway:ital,wght@0,500;1,400&display=swap');
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color: black;
+  font-family: 'Besley', serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: .1rem .1rem black;
 }
 
-.js-clock {
-  font-size: 5rem;
+/* clock */
+.front-clock {
+  font-size: 4.25rem;
 }
 
-.js-title {
-  color: white;
+.clock-title {
+  color: aliceblue;
   font-weight: bold;
   width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
 }
+/* clock */
 
+/* what is your name? */
 .question {
   margin-top: 100px;
   padding-bottom: 20px;
-  color: white;
+  color: aliceblue;
   font-size: 30px;
   font-weight: bold;
   margin: 0 10%;
@@ -31,10 +39,10 @@ body {
   text-align: center;
   outline: none;
   border: none;
-  animation: fadeIn 0.5s linear;
+  animation: fadeIn 1s linear;
 }
 
-.js-form {
+.user-form {
   display: flex;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -42,8 +50,8 @@ body {
   text-align: center;
 }
 
-.js-form input {
-  color: white;
+.user-form input {
+  color: aliceblue;
   font-size: 30px;
   margin: 0px 35%;
   margin-bottom: 30px;
@@ -51,85 +59,110 @@ body {
   text-align: center;
   border: none;
   outline: none;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid aliceblue;
   background-color: transparent;
 }
 
-.js-form ::placeholder {
-  color: white;
+.user-form ::placeholder {
+  color: aliceblue;
   font-weight: bold;
 }
+/* what is your name? */
 
-.js-greetings {
+/* greetings */
+.user-greetings {
   margin: 50px 0px;
   font-size: 35px;
-  color: white;
+  color: aliceblue;
   width: 100%;
   font-weight: bold;
   text-align: center;
-  animation: fadeIn 0.5s linear;
+  animation: fadeIn 1s linear;
+}
+/* greetings */
+
+/* What are you up to today? */
+.todolist-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
 }
 
-.js-toDoForm {
-  display: inline;
-  right: 0px;
-  font-size: 30px;
+.todolist-container input {
+  border: none;
+  border-bottom: 0.1rem solid aliceblue;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  width: 30%;
+  padding: 0.5rem;
   text-align: center;
+  color: aliceblue;
+  font-size: 2rem;
 }
 
-.js-toDoForm input {
-  color: rgba(255, 255, 255, 0.945);
+.todolist-container ::placeholder {
+  color: aliceblue;
   font-size: 25px;
-  margin: 0px 25%;
-  width: 50%;
+}
+
+.to-dos {
+  display: flex;
+  flex-direction: column;
+}
+/* What are you up to today? */
+
+/* quotes */
+.quotes-container {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quotes-container2 {
+  justify-content: center;
+  font-style: italic;
+}
+
+#quote-form {
+  visibility: hidden;
+}
+  #quote-form input[type="text"] {
+  border: none;
+  border-bottom: 0.1rem solid aliceblue;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  width: 30rem;
+  padding: 0.5rem;
   text-align: center;
-  outline: none;
-  border: none;
-  border-bottom: 3px solid white;
-  background-color: transparent;
-}
+  color: aliceblue;
+  font-size: 2rem;
+  }
 
-.js-toDoForm ::placeholder {
-  font-weight: 600;
-}
-
-.js-toDoList {
-  margin: 20px 0px;
-  font-size: 20px;
-  color: white;
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
-  animation: fadeIn 0.5s linear;
-}
-
-.js-toDoList li {
-  position: relative;
-  margin: 0px 25%;
-  width: 50%;
-  text-align: left;
-}
-.js-toDoList span {
-  width: 100px;
-  margin-top: 10px;
-  color: white;
-  font-size: 30px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-.js-toDoList button {
-  position: relative;
-  right: 0px;
-  margin-left: 10px;
-  color: white;
-  font-size: 28px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
+  #quote-form input[type="submit"] {
+      display: none;
+  }
+  .quotes-options {
+    display: flex;
+    width: 30rem;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+    .new-quote, .add-quote {
+      font-size: 0.7rem;
+      border: 1px solid none;
+      padding: 0.3rem;
+      cursor: pointer;
+      border-radius: 1rem 1rem;
+    }
+      .new-quote:hover, .add-quote:hover {
+        border: 1px solid slategrey;
+      }
 
 @keyframes fadeIn {
   from {
@@ -145,7 +178,7 @@ body {
   display: none;
 }
 
-.showing {
+.displayed {
   display: block;
 }
 

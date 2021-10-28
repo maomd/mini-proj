@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Own To Do List!</title>
+    <title>Momentum app</title>
     <meta charset="utf-8" />
+    <script src="https://kit.fontawesome.com/34f0bbad19.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
     <!-- clock -->
-    <div class="js-clock">
-      <h1 class="js-title">00:00</h1>
+    <div class="front-clock">
+      <h1 class="clock-title">00:00</h1>
     </div>
     <!-- clock -->
 
     <!-- what is your name? -->
-    <form class="js-form form">
+    <form class="user-form form">
       <h1 class="question">Hello, What's Your name?</h1>
 
-      <input type="text" placeholder=>
+      <input type="text" placeholder="">
     </form>
     <!-- what is your name? -->
    
     <!-- greetings -->
-    <h4 class="js-greetings greetings"></h4>
+    <h4 class="user-greetings greetings"></h4>
     <!-- greetings -->
    
+
     <!-- What are you up to today? -->
-    <form class="js-toDoForm">
-      <h1 class="question">What are you up to today?</h1>
-      <input type="text" placeholder=>
-    </form>
+    <div class="todolist-container">
+        <input id="inputField" type="text" placeholder="What is your main focus today?"> <br>
+        <div id="addToDo"><i class="far fa-check-circle"></i></div>
+        <div class="to-dos" id="toDoContainer"></div>
+    </div>
     <!-- What are you up to today? -->
 
-    <!-- todo list -->
-    <ul class="js-toDoList"></ul>
-    <!-- todo list -->
+    <!-- quotes -->
+    <div class="quotes-container">
+      <form id="quote-form">
+        <input type="text" id="quote-input">
+        <input type="submit" value="">
+      </form>
+
+      <div class="quotes-container2"></div>
+
+      <div class="quotes-options">
+        <div class="new-quote"><i class="fas fa-random"></i> quote</div><br>
+        <div class="add-quote"><i class="fas fa-plus"></i> quote</div>
+      </div>
+    </div>
+    <!-- quotes -->
 
     <!-- js script -->
     <script src="./script/clock.js"></script>
     <script src="./script/user.js"></script>
     <script src="./script/bg.js"></script>
     <script src="./script/todolist.js"></script>
+    <script src="./script/quotes.js"></script>
     <!-- js script -->
   </body>
 </html>

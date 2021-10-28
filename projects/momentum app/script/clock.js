@@ -1,18 +1,22 @@
-const clockContainer = document.querySelector(".js-clock");
+const clockContainer = document.querySelector(".front-clock");
 
-const clockTitle = clockContainer.querySelector(".js-title");
+const clockTitle = clockContainer.querySelector(".clock-title");
 
 
 function getTime() {
   const date = new Date();
-  const minutes = date.getMinutes();
-  const hours = date.getHours();
-  const seconds = date.getSeconds();
-  clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${
-    minutes < 10 ? `0${minutes}` : minutes
-  }:${seconds < 10 ? `0${seconds}` : seconds}`;
+  const minutes = addZero(date.getMinutes());
+  const hours = addZero(date.getHours());
+  const seconds = addZero(date.getSeconds());
+  clockTitle.innerText = `${hours}:` + `${minutes}:` + `${seconds}`;
 }
 
+function addZero(num) {
+  if (num < 10){
+    return '0' + num
+  }
+  else return num
+}
 
 function init() {
   getTime();

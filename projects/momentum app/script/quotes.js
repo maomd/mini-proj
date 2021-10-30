@@ -19,6 +19,7 @@ async function getQuote () {
  quoteText.innerHTML = `"${quote}"` 
  authorCont.innerHTML = ` -${author}`
  authorCont.style.textAlign = "center"
+ authorCont.style.display = "block"
 }
 
 newQuote.addEventListener('click', getQuote)
@@ -38,7 +39,7 @@ function addedQuote() {
   quoteForm.style.visibility = 'visible'
   quoteContainer.style.display = 'none'
   quoteInput.value = `"${quoteAdded}"`
-  authorCont.style.display = 'none'
+  authorCont.style.display = "none"
 }
 
 quoteForm.addEventListener('submit', function(e){

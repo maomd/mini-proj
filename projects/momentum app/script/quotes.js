@@ -7,18 +7,18 @@ quoteContainer.appendChild(authorCont)
 const newQuote = document.querySelector(".new-quote")
 
 
-  async function getQuote () {
-  quoteContainer.style.display = 'block'
-  const res = await fetch("https://type.fit/api/quotes")
-  const quotes = await res.json()
-  const num = Math.floor(Math.random()*quotes.length)
-  const item = quotes[num]
-  const quote = item.text
-  const author = item.author
-  quoteForm.style.visibility = 'hidden'
-  quoteText.innerHTML = `"${quote}"` 
-  authorCont.innerHTML = ` -${author}`
-  authorCont.style.textAlign = "center"
+async function getQuote () {
+ quoteContainer.style.display = 'block'
+ const res = await fetch("https://type.fit/api/quotes")
+ const quotes = await res.json()
+ const num = Math.floor(Math.random()*quotes.length)
+ const item = quotes[num]
+ const quote = item.text
+ const author = item.author
+ quoteForm.style.visibility = 'hidden'
+ quoteText.innerHTML = `"${quote}"` 
+ authorCont.innerHTML = ` -${author}`
+ authorCont.style.textAlign = "center"
 }
 
 newQuote.addEventListener('click', getQuote)

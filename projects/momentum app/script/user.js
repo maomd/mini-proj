@@ -18,6 +18,7 @@ function greetUser(text) {
         } else {
           greeting.innerText = `Hi ${text}, Good Evening!`; 
         }
+
       }
 
 function saveName(text) {
@@ -49,3 +50,12 @@ function init() {
   loadName();
 }
 init();
+
+function reset () {
+  localStorage.removeItem(currentValue)
+  location.reload()
+}
+
+const resetbttn = document.querySelector(".reset")
+
+resetbttn.addEventListener('click', reset);

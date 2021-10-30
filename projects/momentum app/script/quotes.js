@@ -1,7 +1,9 @@
 const quotesMain = document.querySelector(".quotes-container")
 const quoteContainer = document.querySelector(".quotes-container2")
 const quoteText = document.createElement("p")
+const authorCont = document.createElement("p")
 quoteContainer.appendChild(quoteText)
+quoteContainer.appendChild(authorCont)
 const newQuote = document.querySelector(".new-quote")
 
 
@@ -12,8 +14,11 @@ const newQuote = document.querySelector(".new-quote")
   const num = Math.floor(Math.random()*quotes.length)
   const item = quotes[num]
   const quote = item.text
+  const author = item.author
   quoteForm.style.visibility = 'hidden'
-  quoteText.innerHTML = ` "${quote}" `
+  quoteText.innerHTML = `"${quote}"` 
+  authorCont.innerHTML = ` -${author}`
+  authorCont.style.textAlign = "center"
 }
 
 newQuote.addEventListener('click', getQuote)
@@ -33,6 +38,7 @@ function addedQuote() {
   quoteForm.style.visibility = 'visible'
   quoteContainer.style.display = 'none'
   quoteInput.value = `"${quoteAdded}"`
+  authorCont.style.display = 'none'
 }
 
 quoteForm.addEventListener('submit', function(e){

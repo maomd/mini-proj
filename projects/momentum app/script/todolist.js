@@ -8,7 +8,7 @@
      list.innerText = inputField.value;
      list.style.listStyle = "none";
      toDoContainer.appendChild(list);
-     inputField.value = "";
+     inputField.value = '';
      list.style.padding = "0.5rem"
      list.style.fontSize = "2rem"
      list.addEventListener('click', function(){
@@ -16,10 +16,14 @@
      })
      list.addEventListener('dblclick', function(){
      toDoContainer.removeChild(list);
-     })     
- 
+     })  
  }
  
- addToDoButton.addEventListener ('click', todolist);
+ addToDoButton.addEventListener ('click', function(event) {
+    event.preventDefault();
+    todolist();
+ })
+
+ 
  
      

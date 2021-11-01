@@ -19,10 +19,8 @@
      })  
  }
  
- addToDoButton.addEventListener ('click', function(event) {
-    event.preventDefault();
-    todolist();
- })
+ addToDoButton.addEventListener ('click', todolist)
+ 
 
  
  

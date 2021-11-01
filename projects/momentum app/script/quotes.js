@@ -1,3 +1,4 @@
+// DOM variables
 const quotesMain = document.querySelector(".quotes-container")
 const quoteContainer = document.querySelector(".quotes-container2")
 const quoteText = document.createElement("p")
@@ -6,7 +7,7 @@ quoteContainer.appendChild(quoteText)
 quoteContainer.appendChild(authorCont)
 const newQuote = document.querySelector(".new-quote")
 
-
+// quote generator using api
 async function getQuote () {
  quoteContainer.style.display = 'block'
  const res = await fetch("https://type.fit/api/quotes")
@@ -22,6 +23,7 @@ async function getQuote () {
  authorCont.style.display = "block"
 }
 
+// for new quote
 newQuote.addEventListener('click', getQuote)
 getQuote()
 
@@ -30,9 +32,9 @@ const quoteForm = document.querySelector("#quote-form")
 const quoteInput = document.querySelector("#quote-input")
 const quoteText2 = document.createElement("p")
 const quoteAdded = quoteText2.innerHTML
-
 quoteForm.appendChild(quoteText2)
 
+// for add quote
 addQuote.addEventListener('click', addedQuote)
 
 function addedQuote() {
@@ -42,8 +44,8 @@ function addedQuote() {
   authorCont.style.display = "none"
 }
 
-quoteForm.addEventListener('submit', function(e){
-  e.preventDefault()
+quoteForm.addEventListener('submit', function(event){
+  event.preventDefault()
   quoteText.innerHTML = quoteInput.value
   quoteForm.style.visibility = 'hidden'
   quoteContainer.style.display = 'block'

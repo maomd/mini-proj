@@ -1,8 +1,8 @@
+// DOM variables
 const clockContainer = document.querySelector(".front-clock");
-
 const clockTitle = clockContainer.querySelector(".clock-title");
 
-
+// clock display
 function getTime() {
   const date = new Date();
   const minutes = addZero(date.getMinutes());

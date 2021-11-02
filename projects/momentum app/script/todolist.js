@@ -14,7 +14,7 @@ function todolist(){
         list.addEventListener('dblclick', function(){
         toDoContainer.removeChild(list);
         }) 
-        saveTodos(); 
+        saveTodos();      
  }
 
  function saveTodos () {
@@ -27,7 +27,7 @@ function todolist(){
         localStorage.setItem('todos',JSON.stringify(oldTodo));
         inputField.value = '';
  }
- 
+  
  addToDoButton.addEventListener ('click', todolist)
  
 

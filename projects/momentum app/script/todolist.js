@@ -4,17 +4,28 @@
  let inputField = document.getElementById('inputField');
  
  function todolist(){
-     var list = document.createElement('li');
+     let list = document.createElement('li');
      list.classList.add('list-styling');
      list.innerText = inputField.value;
      toDoContainer.appendChild(list);
-     inputField.value = '';
      list.addEventListener('click', function(){
-     list.style.textDecoration = "line-through";
-     })
-     list.addEventListener('dblclick', function(){
-     toDoContainer.removeChild(list);
-     })  
+        list.style.textDecoration = "line-through";
+        })
+        list.addEventListener('dblclick', function(){
+        toDoContainer.removeChild(list);
+        }) 
+     inputField.value = '';
+     save();
+ }
+
+ function save () {
+     let newTodo = inputField.value;
+     if (localStorage.getItem('todos') == null) {
+         localStorage.setItem('todos', '[]');
+     }
+     let oldTodo = JSON.parse(localStorage.getItem('todos'));
+     oldTodo.push(newTodo);
+     localStorage.setItem('todos',JSON.stringify(oldTodo));
  }
  
  addToDoButton.addEventListener ('click', todolist)

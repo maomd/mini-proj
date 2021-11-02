@@ -110,6 +110,12 @@ body {
   flex-direction: column;
 }
 
+.to-dos li {
+  list-style: none;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
 #addToDo :hover {
   color: greenyellow;
 }

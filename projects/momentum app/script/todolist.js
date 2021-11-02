@@ -7,11 +7,8 @@
      var list = document.createElement('li');
      list.classList.add('list-styling');
      list.innerText = inputField.value;
-     list.style.listStyle = "none";
      toDoContainer.appendChild(list);
      inputField.value = '';
-     list.style.padding = "0.5rem"
-     list.style.fontSize = "2rem"
      list.addEventListener('click', function(){
      list.style.textDecoration = "line-through";
      })

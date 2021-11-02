@@ -14,10 +14,10 @@ function todolist(){
         list.addEventListener('dblclick', function(){
         toDoContainer.removeChild(list);
         }) 
-        save(); 
+        saveTodos(); 
  }
 
- function save () {
+ function saveTodos () {
      let newTodo = inputField.value;
         if (localStorage.getItem('todos') == null) {
             localStorage.setItem('todos', '[]');

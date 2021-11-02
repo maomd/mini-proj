@@ -9,18 +9,18 @@ const newQuote = document.querySelector(".new-quote")
 
 // quote generator using api
 async function getQuote () {
- quoteContainer.style.display = 'block'
- const res = await fetch("https://type.fit/api/quotes")
- const quotes = await res.json()
- const num = Math.floor(Math.random()*quotes.length)
- const item = quotes[num]
- const quote = item.text
- const author = item.author
- quoteForm.style.visibility = 'hidden'
- quoteText.innerHTML = `"${quote}"` 
- authorCont.innerHTML = ` -${author}`
- authorCont.style.textAlign = "center"
- authorCont.style.display = "block"
+  quoteContainer.style.display = 'block'
+  const res = await fetch("https://type.fit/api/quotes")
+  const quotes = await res.json()
+  const num = Math.floor(Math.random()*quotes.length)
+  const item = quotes[num]
+  const quote = item.text
+  const author = item.author
+  quoteForm.style.visibility = 'hidden'
+  quoteText.innerHTML = `"${quote}"` 
+  authorCont.innerHTML = ` -${author}`
+  authorCont.style.textAlign = "center"
+  authorCont.style.display = "block"
 }
 
 // for new quote

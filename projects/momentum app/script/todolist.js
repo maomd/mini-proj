@@ -16,7 +16,8 @@ function todolist(){
         toDoContainer.removeChild(list);
         }) 
         saveTodos();    
-        loadTodos ();  
+        loadTodos ();
+        
  }
 
  function saveTodos () {
@@ -38,7 +39,7 @@ function todolist(){
 
 
  addToDoButton.addEventListener ('click', todolist)
- 
+   
 
  
  

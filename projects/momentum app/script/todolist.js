@@ -2,9 +2,10 @@
 let addToDoButton = document.getElementById('addToDo');
 let toDoContainer = document.getElementById('toDoContainer');
 let inputField = document.getElementById('inputField');
+let list = document.createElement('li');
  
 function todolist(){
-    let list = document.createElement('li');
+    
         list.classList.add('list-styling');
         list.innerText = inputField.value;
         toDoContainer.appendChild(list);
@@ -14,7 +15,8 @@ function todolist(){
         list.addEventListener('dblclick', function(){
         toDoContainer.removeChild(list);
         }) 
-        saveTodos();      
+        saveTodos();    
+        loadTodos ();  
  }
 
  function saveTodos () {
@@ -27,7 +29,14 @@ function todolist(){
         localStorage.setItem('todos',JSON.stringify(oldTodo));
         inputField.value = '';
  }
-  
+
+ function loadTodos () {
+     if (localStorage.getItem('todos') != null) {
+         document.querySelector('li').innerText = JSON.parse(localStorage.getItem('todos'));
+     }
+ }
+
+
  addToDoButton.addEventListener ('click', todolist)
  
 

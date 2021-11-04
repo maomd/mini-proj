@@ -5,7 +5,6 @@ let inputField = document.getElementById('inputField');
 let list = document.createElement('li');
  
 function todolist(){
-    
         list.classList.add('list-styling');
         list.innerText = inputField.value;
         toDoContainer.appendChild(list);

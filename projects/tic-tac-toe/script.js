@@ -39,7 +39,7 @@ document.querySelectorAll('.square').forEach(function(square) {
 document.querySelector('.board').addEventListener('click',function(){
     let elements = document.querySelectorAll('.square') 
     elements.forEach(function(i){
-        console.log(i);
+        console.log(i.innerHTML);
         })
     
 })

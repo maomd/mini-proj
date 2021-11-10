@@ -1,8 +1,11 @@
 //GLOBAL VARIABLES
+const square = document.querySelectorAll('.square');
 let gameActive = true;
 let currentPlayer = "X".fontcolor("red");
 let empty = "";
-let boardState = [empty,empty,empty,empty,empty,empty,empty,empty,empty];
+let boardState = [empty,empty,empty,
+                  empty,empty,empty,
+                  empty,empty,empty];
 const winningConditions = [
     [0,1,2],
     [3,4,5],
@@ -102,11 +105,9 @@ function resetGame () {
     currentPlayer = "X".fontcolor("red");
     boardState = [empty,empty,empty,empty,empty,empty,empty,empty,empty];
     turnIndicator.innerHTML = currentPlayerTurn();
-    document.querySelectorAll('.square').forEach(function(square) {
+    square.forEach(function(square) {
         square.innerHTML = empty;
     });
 }
 
-//Moves storage
-let moves = [];
-let movesCounter = 0
+document.querySelectorAll('.board').addEventListener

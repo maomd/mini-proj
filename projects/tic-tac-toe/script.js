@@ -1,7 +1,7 @@
 //GLOBAL VARIABLES
 const square = document.querySelectorAll('.square');
 let gameActive = true;
-let currentPlayer = "X".fontcolor("red");
+let currentPlayer = "X";
 let empty = "";
 let boardState = [empty,empty,empty,
                   empty,empty,empty,
@@ -36,6 +36,16 @@ const currentPlayerTurn = function() {
 document.querySelectorAll('.square').forEach(function(square) {
     square.addEventListener('click', squareClick);
 });
+document.querySelector('.board').addEventListener('click',function(){
+    let elements = document.querySelectorAll('.square') 
+    elements.forEach(function(i){
+        console.log(i.firstChild.innerHTML);
+        // // if (i.firstChild.innerText !== null) {
+        //     console.log(i.firstChild.innerText)
+        // }
+        })
+    
+})
 // FUNCTION FOR THE SQUARE CLICK
 function squareClick(clickedSquareEvent) {
     const clickedSquare = clickedSquareEvent.target;
@@ -58,10 +68,10 @@ const turnIndicator = document.querySelector('.turnIndicator');
 turnIndicator.innerHTML = currentPlayerTurn();
 
 function playerSwitch() {
-    if (currentPlayer === "X".fontcolor("red")) {
-        currentPlayer = "O".fontcolor("lightgreen");
+    if (currentPlayer === "X") {
+        currentPlayer = "O";
     } else {
-        currentPlayer = "X".fontcolor("red");
+        currentPlayer = "X";
     }
     turnIndicator.innerHTML = currentPlayerTurn();
 }
@@ -102,7 +112,7 @@ document.querySelector('.reset').addEventListener('click', resetGame);
 // FUNCTION FOR RESET GAME
 function resetGame () {
     gameActive = true;
-    currentPlayer = "X".fontcolor("red");
+    currentPlayer = "X";
     boardState = [empty,empty,empty,empty,empty,empty,empty,empty,empty];
     turnIndicator.innerHTML = currentPlayerTurn();
     square.forEach(function(square) {
@@ -110,4 +120,5 @@ function resetGame () {
     });
 }
 
-document.querySelectorAll('.board').addEventListener
+document.querySelectorAll('.square').addEventListener('click')
+

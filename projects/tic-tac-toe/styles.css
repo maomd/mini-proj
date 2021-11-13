@@ -1,6 +1,5 @@
 *, *:before, *:after {
     box-sizing: border-box;
-    background-color: black;
 }
 
 body {
@@ -10,6 +9,9 @@ body {
     height: 100vh;
     text-align: center;
     color: whitesmoke;
+    background-image: url(../tic-tac-toe/img/gCMO4p.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .board {
@@ -50,6 +52,10 @@ body {
 .square:nth-child(8),
 .square:nth-child(9) {
     border-bottom: none;
+}
+
+.turnIndicator {
+    font-size: 2.5rem;
 }
 
 button {

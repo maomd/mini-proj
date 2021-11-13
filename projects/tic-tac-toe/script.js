@@ -1,7 +1,8 @@
 //GLOBAL VARIABLES
 const square = document.querySelectorAll('.square');
+let currentIndex = document.querySelector('.indexMovement');
 let gameActive = true;
-let currentPlayer = "X";
+let currentPlayer = "🧟‍♂️";
 let empty = "";
 let boardState = [empty,empty,empty,
                   empty,empty,empty,
@@ -34,15 +35,55 @@ const currentPlayerTurn = function() {
 
 // ADD EVENT LISTENER TO EACH SQUARES
 document.querySelectorAll('.square').forEach(function(square) {
-    square.addEventListener('click', squareClick);
+    square.addEventListener('click', squareClick)
 });
-document.querySelector('.board').addEventListener('click',function(){
-    let elements = document.querySelectorAll('.square') 
-    elements.forEach(function(i){
-        console.log(i.innerHTML);
-        })
+
+// MOVE STORAGE
+let movements = []
+document.querySelector('.board').addEventListener('click',function() {
     
+    let elements = document.querySelectorAll('.square') 
+    // elements.forEach(function(i){
+    //     console.log(i.innerHTML);
+    //     }) 
+    let firstLayer = [];
+    let secondLayer = [];
+    let thirdLayer = [];
+
+    firstLayer.push(elements[0].innerHTML);firstLayer.push(elements[1].innerHTML);firstLayer.push(elements[2].innerHTML);
+    secondLayer.push(elements[3].innerHTML);secondLayer.push(elements[4].innerHTML);secondLayer.push(elements[5].innerHTML);
+    thirdLayer.push(elements[6].innerHTML);thirdLayer.push(elements[7].innerHTML);thirdLayer.push(elements[8].innerHTML);
+
+    let movement = [[...firstLayer],[...secondLayer],[...thirdLayer]]
+    movements.push(movement)
+    console.log(movements)
+
+    //SET STATE VALUE OF INDEX HIDDEN ELEMENT
+    currentIndex.style.color = 'black'
+    currentIndex.value = movements.indexOf(movements[movements.length - 1])
+    console.log(currentIndex.value) 
 })
+
+// PREVIOUS BUTTON 
+let previousMove = document.querySelector('.previousMove')
+    previousMove.addEventListener('click',function(){
+        if (currentIndex.value > 0) {
+            currentIndex.value = parseInt(currentIndex.value) - 1
+            console.log(currentIndex.value)
+        }
+    })
+
+// NEXT BUTTON
+let nextMove = document.querySelector('.nextMove')
+    nextMove.addEventListener('click',function(){
+        let lastIndex = movements.indexOf(movements[movements.length - 1])
+        if(currentIndex.value = parseInt(currentIndex.value) + 1)
+        console.log(currentIndex.value)
+    })
+
+    
+
+
 // FUNCTION FOR THE SQUARE CLICK
 function squareClick(clickedSquareEvent) {
     const clickedSquare = clickedSquareEvent.target;
@@ -65,10 +106,10 @@ const turnIndicator = document.querySelector('.turnIndicator');
 turnIndicator.innerHTML = currentPlayerTurn();
 
 function playerSwitch() {
-    if (currentPlayer === "X") {
-        currentPlayer = "O";
+    if (currentPlayer === "🧟‍♂️") {
+        currentPlayer = "🌻";
     } else {
-        currentPlayer = "X";
+        currentPlayer = "🧟‍♂️";
     }
     turnIndicator.innerHTML = currentPlayerTurn();
 }
@@ -109,12 +150,14 @@ document.querySelector('.reset').addEventListener('click', resetGame);
 // FUNCTION FOR RESET GAME
 function resetGame () {
     gameActive = true;
-    currentPlayer = "X";
+    currentPlayer = "🧟‍♂️";
     boardState = [empty,empty,empty,empty,empty,empty,empty,empty,empty];
     turnIndicator.innerHTML = currentPlayerTurn();
     square.forEach(function(square) {
         square.innerHTML = empty;
     });
+
+    movements = []
 }
 
 document.querySelectorAll('.square').addEventListener('click')

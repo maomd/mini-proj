@@ -42,12 +42,10 @@ document.querySelectorAll('.square').forEach(function(square) {
 
 // MOVE STORAGE
 let movements = []
-document.querySelector('.board').addEventListener('click',function() {
+    document.querySelector('.board').addEventListener('click',function() {
     
     let elements = document.querySelectorAll('.square') 
-    // elements.forEach(function(i){
-    //     console.log(i.innerHTML);
-    //     }) 
+   
     let firstLayer = [];
     let secondLayer = [];
     let thirdLayer = [];
@@ -185,7 +183,7 @@ document.querySelector('.reset').addEventListener('click', resetGame);
 
 // FUNCTION FOR RESET GAME
 function resetGame () {
-    console.clear();
+    location.reload();
     gameActive = true;
     currentPlayer = "🧟‍♂️";
     boardState = [empty,empty,empty,empty,empty,empty,empty,empty,empty];

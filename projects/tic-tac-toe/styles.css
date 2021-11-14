@@ -23,11 +23,10 @@ body {
 .square {
     height: 6.25rem;
     width: 6.25rem;
-    border: 1px solid whitesmoke;
+    border: 5px solid lightgreen;
     transition: 0.2s ease-out;
     cursor: pointer;
     font-size: 5rem;
-    font-family: fantasy;
 }
 
 .square:nth-child(1),
@@ -54,18 +53,22 @@ body {
     border-bottom: none;
 }
 
-.turnIndicator {
-    font-size: 2.5rem;
+.turnIndicator, .title {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    text-shadow: 0 0.5rem 0.5rem black;
+    color: greenyellow;
 }
 
 button {
+    margin: 0 0.5rem;
     background-color: green;
     color: whitesmoke;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    box-shadow: 0 0.2rem 0.2rem darkgrey;
+    box-shadow: 0.2rem 0.2rem 0.2rem darkgrey;
     transition: 0.2s ease-out;
 }
 

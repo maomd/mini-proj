@@ -17,6 +17,8 @@ const winningConditions = [
     [0,4,8],
     [2,4,6],
 ];
+let previousMove = document.querySelector('.previousMove')
+let nextMove = document.querySelector('.nextMove')
 
 // FUNCTION FOR THE WINNING MESSAGE
 const winMessage = function() {
@@ -56,7 +58,7 @@ document.querySelector('.board').addEventListener('click',function() {
 
     let movement = [[...firstLayer],[...secondLayer],[...thirdLayer]]
     movements.push(movement)
-    console.log(movements)
+    console.table(movement)
 
     //SET STATE VALUE OF INDEX HIDDEN ELEMENT
     currentIndex.style.color = 'black'
@@ -65,19 +67,51 @@ document.querySelector('.board').addEventListener('click',function() {
 })
 
 // PREVIOUS BUTTON 
-let previousMove = document.querySelector('.previousMove')
+    previousMove.style.display = "none";
     previousMove.addEventListener('click',function(){
         if (currentIndex.value > 0) {
             currentIndex.value = parseInt(currentIndex.value) - 1
-            console.log(currentIndex.value)
+            
+            square[0].innerHTML = movements[currentIndex.value][0][0]
+            square[1].innerHTML = movements[currentIndex.value][0][1]
+            square[2].innerHTML = movements[currentIndex.value][0][2]
+            square[3].innerHTML = movements[currentIndex.value][1][0]
+            square[4].innerHTML = movements[currentIndex.value][1][1]
+            square[5].innerHTML = movements[currentIndex.value][1][2]
+            square[6].innerHTML = movements[currentIndex.value][2][0]
+            square[7].innerHTML = movements[currentIndex.value][2][1]
+            square[8].innerHTML = movements[currentIndex.value][2][2]
+
+            if (currentIndex.value == 0) {
+                previousMove.style.display = "none";
+            }
+            nextMove.style.display = "inline-block";
+            console.log(currentIndex.value)   
         }
     })
 
 // NEXT BUTTON
-let nextMove = document.querySelector('.nextMove')
+    nextMove.style.display = "none";
     nextMove.addEventListener('click',function(){
         let lastIndex = movements.indexOf(movements[movements.length - 1])
         if(currentIndex.value = parseInt(currentIndex.value) + 1)
+
+            square[0].innerHTML = movements[currentIndex.value][0][0]
+            square[1].innerHTML = movements[currentIndex.value][0][1]
+            square[2].innerHTML = movements[currentIndex.value][0][2]
+            square[3].innerHTML = movements[currentIndex.value][1][0]
+            square[4].innerHTML = movements[currentIndex.value][1][1]
+            square[5].innerHTML = movements[currentIndex.value][1][2]
+            square[6].innerHTML = movements[currentIndex.value][2][0]
+            square[7].innerHTML = movements[currentIndex.value][2][1]
+            square[8].innerHTML = movements[currentIndex.value][2][2]
+
+            if (currentIndex.value == lastIndex) {
+                nextMove.style.display = "none";
+            }
+
+            previousMove.style.display = "inline-block"
+
         console.log(currentIndex.value)
     })
 
@@ -132,12 +166,14 @@ function result() {
     }
     if(roundWon) {
         turnIndicator.innerHTML = winMessage();
+        previousMove.style.display = "inline-block";
         gameActive = false;
         return;
     }
     let roundDraw = !boardState.includes("");
     if (roundDraw) {
         turnIndicator.innerHTML = drawMessage();
+        previousMove.style.display = "inline-block";
         gameActive = false;
         return;
     }
@@ -149,6 +185,7 @@ document.querySelector('.reset').addEventListener('click', resetGame);
 
 // FUNCTION FOR RESET GAME
 function resetGame () {
+    console.clear();
     gameActive = true;
     currentPlayer = "🧟‍♂️";
     boardState = [empty,empty,empty,empty,empty,empty,empty,empty,empty];
@@ -159,6 +196,4 @@ function resetGame () {
 
     movements = []
 }
-
-document.querySelectorAll('.square').addEventListener('click')
 

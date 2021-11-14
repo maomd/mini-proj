@@ -9,7 +9,7 @@ body {
     height: 100vh;
     text-align: center;
     color: whitesmoke;
-    background-image: url(../tic-tac-toe/img/gCMO4p.jpeg);
+    background-image: url('../tic-tac-toe/img/Nightfrontyard.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 button {
-    background-color: black;
+    background-color: green;
     color: whitesmoke;
     border: none;
     padding: 0.5rem 1rem;
@@ -70,5 +70,5 @@ button {
 }
 
 button:hover {
-    box-shadow: 0 0.2rem 0.2rem  red;
+    box-shadow: 0 0.2rem 0.2rem  greenyellow;
 }

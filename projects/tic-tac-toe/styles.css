@@ -1,5 +1,7 @@
+@import url('http://fonts.cdnfonts.com/css/feast-of-flesh-bb-2');
 *, *:before, *:after {
     box-sizing: border-box;
+    font-family: 'Feast of Flesh BB', sans-serif;                                                                                      
 }
 
 body {
@@ -56,13 +58,14 @@ body {
 
 .title {
     margin: 0 auto;
-    letter-spacing: 0.5rem;
+    letter-spacing: 1rem;
     font-size: 5rem;
     text-shadow: 0 0.5rem 0.5rem black;
     color: greenyellow;
 }
 
 .turnIndicator {
+    letter-spacing: 0.5rem;
     font-size: 2rem;
     text-shadow: 0 0.5rem 0.5rem black;
     color: greenyellow;
@@ -78,6 +81,7 @@ button {
     cursor: pointer;
     box-shadow: 0 0.5rem 0.5rem darkgrey;
     transition: 0.2s ease-out;
+    letter-spacing: 0.3rem;
 }
 
 button:hover {

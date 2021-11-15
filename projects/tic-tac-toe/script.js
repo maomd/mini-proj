@@ -109,12 +109,8 @@ let movements = []
             }
 
             previousMove.style.display = "inline-block"
-
-        console.log(currentIndex.value)
+            console.log(currentIndex.value)
     })
-
-    
-
 
 // FUNCTION FOR THE SQUARE CLICK
 function squareClick(clickedSquareEvent) {
@@ -170,7 +166,7 @@ function result() {
     }
     let roundDraw = !boardState.includes("");
     if (roundDraw) {
-        turnIndicator.innerHTML = drawMessage();
+        turnIndicator.innerHTML = drawMessage().fontcolor("gold");
         previousMove.style.display = "inline-block";
         gameActive = false;
         return;

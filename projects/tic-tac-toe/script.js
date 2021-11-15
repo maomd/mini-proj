@@ -22,7 +22,7 @@ let nextMove = document.querySelector('.nextMove')
 
 // FUNCTION FOR THE WINNING MESSAGE
 const winMessage = function() {
-    return currentPlayer + " is the Winner!";
+    return currentPlayer + " is the Winner! 🏆";
 }
 
 // FUNCTION FOR THE DRAW MESSAGE
@@ -163,7 +163,7 @@ function result() {
         }
     }
     if(roundWon) {
-        turnIndicator.innerHTML = winMessage();
+        turnIndicator.innerHTML = winMessage().fontcolor("gold");
         previousMove.style.display = "inline-block";
         gameActive = false;
         return;

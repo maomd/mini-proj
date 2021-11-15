@@ -3,7 +3,8 @@
 }
 
 body {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -15,7 +16,7 @@ body {
 }
 
 .board {
-    margin: 2rem auto;
+    margin: 1rem auto;
     display: grid;
     grid-template-columns: repeat(3, auto);
 }
@@ -53,8 +54,15 @@ body {
     border-bottom: none;
 }
 
-.turnIndicator, .title {
-    letter-spacing: 3px;
+.title {
+    margin: 0 auto;
+    letter-spacing: 0.5rem;
+    font-size: 5rem;
+    text-shadow: 0 0.5rem 0.5rem black;
+    color: greenyellow;
+}
+
+.turnIndicator {
     font-size: 2rem;
     text-shadow: 0 0.5rem 0.5rem black;
     color: greenyellow;
@@ -68,10 +76,10 @@ button {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    box-shadow: 0.2rem 0.2rem 0.2rem darkgrey;
+    box-shadow: 0 0.5rem 0.5rem darkgrey;
     transition: 0.2s ease-out;
 }
 
 button:hover {
-    box-shadow: 0 0.2rem 0.2rem  greenyellow;
+    box-shadow: 0 0.5rem 0.5rem  greenyellow;
 }

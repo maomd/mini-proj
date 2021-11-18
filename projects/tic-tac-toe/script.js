@@ -58,7 +58,7 @@ let movements = []
     movements.push(movement)
     console.table(movement)
 
-    //SET STATE VALUE OF INDEX HIDDEN ELEMENT
+//SET STATE VALUE OF INDEX HIDDEN ELEMENT
     currentIndex.style.color = 'black'
     currentIndex.value = movements.indexOf(movements[movements.length - 1])
     console.log(currentIndex.value) 

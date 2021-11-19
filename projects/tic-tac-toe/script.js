@@ -115,7 +115,7 @@ let movements = []
 // FUNCTION FOR THE SQUARE CLICK
 function squareClick(clickedSquareEvent) {
     const clickedSquare = clickedSquareEvent.target;
-    const clickedSquareIndex = parseInt(clickedSquare.getAttribute('data-square-index'));
+    const clickedSquareIndex = parseInt(clickedSquare.getAttribute('data-cell-index'));
     if(boardState[clickedSquareIndex] !== "" || !gameActive) {
         return;
     }

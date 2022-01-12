@@ -1,43 +1,62 @@
-//  DOM variables
+// GLOBAL VARIABLES
 let addToDoButton = document.getElementById('addToDo');
 let toDoContainer = document.getElementById('toDoContainer');
 let inputField = document.getElementById('inputField');
-let list = document.createElement('li');
- 
-function todolist(){
-        list.classList.add('list-styling');
-        list.innerText = inputField.value;
-        toDoContainer.appendChild(list);
-        list.addEventListener('click', function(){
-        list.style.textDecoration = "line-through";
+addToDoButton.style.visibility = "hidden";
+
+let storedTodo = JSON.parse(localStorage.getItem('todoList'))
+let unorderedList = document.querySelector('.todo-list-detail')
+let todoArr = []
+
+if(storedTodo) {
+    todoArr = [...storedTodo]
+} else {
+    if(!storedTodo){
+        console.log('No stored todos')
+    }
+}
+const handleTodos = function () {
+    let inputValue = inputField.value
+    let todoObj = {
+        todo: inputValue
+    }
+    if (!inputValue) {
+        console.log('todo is empty')
+    } else {
+        todoArr.push(todoObj)
+        inputValue = "";
+        localStorage.setItem('todoList',JSON.stringify(todoArr))
+        location.reload()
+    }
+}
+
+if (storedTodo) {
+    storedTodo.forEach(i => {
+        let li = document.createElement('li')
+        li.className = 'listName'
+        li.textContent = i.todo
+        unorderedList.append(li)
+        li.addEventListener('click', function(){
+        li.style.textDecoration = "line-through";
         })
-        list.addEventListener('dblclick', function(){
-        toDoContainer.removeChild(list);
+        li.addEventListener('dblclick', function(){
+            unorderedList.removeChild(li);    
         }) 
-        saveTodos();    
-        loadTodos ();
-        
- }
-
- function saveTodos () {
-     let newTodo = inputField.value;
-        if (localStorage.getItem('todos') == null) {
-            localStorage.setItem('todos', '[]');
-        }
-     let oldTodo = JSON.parse(localStorage.getItem('todos'));
-        oldTodo.push(newTodo);
-        localStorage.setItem('todos',JSON.stringify(oldTodo));
-        inputField.value = '';
- }
-
- function loadTodos () {
-     if (localStorage.getItem('todos') != null) {
-         document.querySelector('li').innerText = JSON.parse(localStorage.getItem('todos'));
-     }
- }
+    });
+}
 
 
- addToDoButton.addEventListener ('click', todolist)
+const addTodo = inputField.addEventListener("keyup", function(e) {
+    if(event.key === "Enter") {
+        e.preventDefault();
+        addToDoButton.click();
+        handleTodos();
+    }
+});
+
+
+
+
    
 
  

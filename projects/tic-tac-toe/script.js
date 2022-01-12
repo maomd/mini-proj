@@ -37,12 +37,12 @@ const currentPlayerTurn = function() {
 
 // ADD EVENT LISTENER TO EACH SQUARES
 document.querySelectorAll('.square').forEach(function(square) {
-    square.addEventListener('click', squareClick)
-});
+    square.addEventListener('click',squareClick)
+        });
 
 // MOVE STORAGE
 let movements = []
-    document.querySelector('.board').addEventListener('click',function() {
+    document.querySelector('.board').addEventListener('click', function() {
     
     let elements = document.querySelectorAll('.square') 
    

@@ -18,6 +18,7 @@ async function getQuote () {
   const author = item.author
   quoteForm.style.visibility = 'hidden'
   quoteText.innerHTML = `"${quote}"` 
+  quoteText.style.textAlign = "center"
   authorCont.innerHTML = ` -${author}`
   authorCont.style.textAlign = "center"
   authorCont.style.display = "block"

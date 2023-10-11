@@ -1,0 +1,80 @@
+/*variables*/
+/*variables*/
+/*background*/
+.background, body {
+  background: url(../img/image.png) no-repeat, black;
+  background-size: cover;
+  height: 100vh;
+}
+
+/*end of background*/
+/*form-container*/
+.formcontainer, .container {
+  margin: auto;
+  margin-top: 5%;
+  text-align: left;
+  font-size: large;
+  border: 7px rgb(202, 64, 110) solid;
+  border-radius: 10px;
+  background-color: rgba(231, 189, 196, 0.089);
+  width: 500px;
+  padding: 10px;
+}
+
+/*end of form-container*/
+/*input bar*/
+.inputBar, .submit-button input, #comments, #dropdown, .input {
+  border: 2px rgb(243, 189, 189) solid;
+  border-radius: 3px;
+}
+
+/*end of input bar*/
+/*comment bar*/
+.commentBar, #comments {
+  width: 60%;
+}
+
+/*end of comment bar*/
+/*submit-button*/
+/*end of submit-button*/
+/*body*/
+body {
+  color: rgb(247, 86, 185);
+  font-family: "Mandatory Plaything", sans-serif;
+}
+
+/*end of body*/
+/*title name*/
+.titlename {
+  margin-top: 5rem;
+}
+.titlename h1 {
+  text-align: center;
+  text-shadow: 1px 1px whitesmoke;
+  letter-spacing: 1rem;
+}
+.titlename p {
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+
+/*end of title name*/
+/*form-container*/
+/*end of form-container*/
+/*name, email, age input bar*/
+/*end of name, email, age inout bar*/
+/*color-dropdown*/
+/*color-dropdown*/
+/*comment bar*/
+/*end of comment bar*/
+/*submit*/
+.submit-button input {
+  color: rgb(247, 86, 185);
+  background-color: rgb(34, 31, 31);
+  letter-spacing: 0.5em;
+  font-family: "Mandatory Plaything", sans-serif;
+  width: 20%;
+  text-transform: capitalize;
+}
+
+/*end submit*//*# sourceMappingURL=survey-styles.css.map */

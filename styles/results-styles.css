@@ -1,0 +1,23 @@
+.resultbackground, body {
+  background-image: url(../img/sqd.jpg);
+  background-size: cover;
+}
+
+.container, .result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12%;
+  background-color: rgba(20, 2, 2, 0.493);
+  height: 300px;
+  color: palevioletred;
+  text-shadow: 1px 1px whitesmoke;
+}
+
+body {
+  font-family: "Mandatory Plaything", sans-serif;
+}
+
+.result {
+  letter-spacing: 0.3em;
+}/*# sourceMappingURL=results-styles.css.map */

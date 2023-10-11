@@ -75,7 +75,7 @@ body {
           justify-content: center;
 }
 
-.project-button {
+.aboutme-button {
   background-color: #7990d2;
   border: 0;
   color: white;
@@ -88,7 +88,7 @@ body {
   cursor: pointer;
 }
 
-.project-button:hover {
+.aboutme-button:hover {
   background-color: darkblue;
 }
 /*# sourceMappingURL=index.css.map */
